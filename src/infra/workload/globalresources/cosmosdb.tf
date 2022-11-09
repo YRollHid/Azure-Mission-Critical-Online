@@ -4,8 +4,8 @@ resource "azurerm_cosmosdb_account" "main" {
   resource_group_name = azurerm_resource_group.global.name
   offer_type          = "Standard"
 
-  enable_automatic_failover       = false
-  enable_multiple_write_locations = false
+  enable_automatic_failover       = true
+  enable_multiple_write_locations = true
 
   consistency_policy {
     consistency_level       = "Session"
@@ -18,7 +18,7 @@ resource "azurerm_cosmosdb_account" "main" {
     content {
       location          = geo_location.value
       failover_priority = geo_location.key
-      zone_redundant    = true
+      zone_redundant    = false
     }
   }
 
