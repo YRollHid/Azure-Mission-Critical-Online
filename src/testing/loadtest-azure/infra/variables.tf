@@ -1,7 +1,7 @@
 variable "location" {
   description = "The Azure Region in which the load test will be provisioned."
   type        = string
-  default     = "northeurope"
+  default     = "eastus2"
 }
 
 variable "environment" {
