@@ -16,7 +16,7 @@ using AlwaysOn.Shared;
 namespace AlwaysOn.CatalogService.Controllers
 {
     [ApiController]
-    [ApiVersion("1.0")]
+    [ApiVersion("2.0")]
     [Route("/api/{version:apiVersion}/CatalogItem/{itemId:guid}/[controller]")]
     public class CommentsController : ControllerBase
     {

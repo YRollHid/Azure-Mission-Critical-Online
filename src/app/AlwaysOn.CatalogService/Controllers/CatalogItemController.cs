@@ -20,7 +20,7 @@ using Microsoft.Extensions.Logging;
 namespace AlwaysOn.CatalogService.Controllers
 {
     [ApiController]
-    [ApiVersion("1.0")]
+    [ApiVersion("2.0")]
     [Route("/api/{version:apiVersion}/[controller]")]
     public class CatalogItemController : ControllerBase
     {
