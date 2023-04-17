@@ -8,8 +8,9 @@ parameters:
 - name: environment
   displayName: 'Environment (Subscriptions)'
   type: string
-  default: 'int'
+  default: 'e2e'
   values:
+  - e2e
   - int
   - prod
 
